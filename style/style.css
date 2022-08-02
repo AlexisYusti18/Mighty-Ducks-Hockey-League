@@ -2,36 +2,55 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500&family=Gentium+Book+Plus&family=Inter&family=Oswald:wght@500&family=Roboto:ital,wght@0,100;1,700&family=Shadows+Into+Light&display=swap');
+
 body{
-    background-image:url(../assets/Hockey_fondo.png);
+    background-color: #211915;
 }
 .headercon{
     width: 100%;
-    height: 45vh;
+    min-height:100vh;
     display: flex;
     flex-direction: column;
+    background-image:url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.h1con{
-    height: 6vh;
+.navCtn{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: white;
+    min-height: 7vh;   
 }
-h1{
-    font-family:'Franklin Gothic Medium';
-    font-size: 3rem;
-    color: white;
-    background-color: blue;
+.a-nav{
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 600;
 }
-.logocon{
+.titleCtn{
+    min-height: 70vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.logoimg{
+.title{
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size:50px;
+    color:#f8e12e;
+    text-shadow: 2px 2px 2px red;
+}
+.logo{
     width: 13vw;
-    opacity: 0.6;
-    background-image:url(https://i.pinimg.com/originals/ee/17/cb/ee17cb01b02bde608e84dcac1595f860.gif);
+    margin-top: 15px;
 }
 .navconten{
     height: 5vh;
@@ -40,74 +59,61 @@ h1{
     align-items: center;
     flex-wrap: wrap;
 }
-.navconten a:hover{
-    background-color: yellow;
-}
-a{
-    font-family:'Franklin Gothic Medium';
-    font-weight: 200;
-    margin: 1rem;
-    padding: 1rem;
-    border: 2px solid black;
-    text-decoration: none;
-    text-align: center;
-    color: red;
-    background-color: blue;
-    border-radius: 20%;
-}
+
 .maincon{
     width: 100%;
     height: 50vh;
     display: flex;
     flex-direction: column;
+    background-color: #211915;
+}
+main{
+    background-color: #211915;
+
 }
 .h2con{
     width: 100%;
     height: 5vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 h2{
-    font-family: 'Franklin Gothic Medium';
-    font-size: 2rem;
+    font-size:40px;
     color: red;
+    text-shadow: 2px 2px 2px red;
+    font-family: 'Roboto', sans-serif;
+    color:#f8e12e;
 }
 
 h3{
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    color: white;
+    color:red;
     margin: 0.5rem;
 }
 p{
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Roboto', sans-serif;
     margin: 1rem;
     padding: 0.3rem;
-    color: white;
     font-size: 19px;
-    text-indent: 0;
-}
-.gifcon{
-    display: flex;
-    justify-content: space-around;
-}
-
-.gif{
-    width: 30%;
-    border: 1rem solid blue;
-    border-radius: 20%;
+    color:white;
 }
 footer{
-    background-image: url(../assets/fondo_footer.JPG);
     height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
+}
+.text-footer{
+    color: white;
 }
 
 /* RULES */
 .medio{
-    background-color: blue;
+    background-color:#211915;
     display: flex;
     flex-direction: column;
     max-height: 80vh;
@@ -119,13 +125,13 @@ footer{
 }
 ol{
     font-family:'Franklin Gothic Medium';
-    color: white;
+    color:white;
     font-size: 19px;
 }
 li{
     list-style-position: inside;
     margin-left: 1rem;
-    color: white;
+    color:white;
     padding: 1px;
 }
 .circle{
@@ -143,6 +149,7 @@ ul{
     align-items: center;
     justify-content: center;
     min-height: 70%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .tablecon{
     width: 70%;
@@ -157,23 +164,25 @@ table{
 }
 
 th{
-    background-color: rgb(214, 192, 23);
+    background-color:red;
+    height: 30px;
     color: white;
 }
 td{
-    background-color: brown;
-    color: white;
+    background-color:#f8e12e;
+    color:black;
     text-align: center;
-}
-.articulosgames{
-    background-color: blue;
-    
 }
 .subrayar{
     text-decoration: underline;
+    color: #fff;
+}
+.p-rules{
+    color: #fff;
 }
 .sangria{
     text-indent: 2rem;
+    color: #fff;
 }
 span{
     font-weight: 900;
@@ -185,7 +194,7 @@ span{
 }
 /* MAPAS */
 iframe{
-    border: 5px solid blue;
+    border: 5px solid black;
 }
 iframe:hover{
     transform: scale(1.3);
@@ -193,11 +202,11 @@ iframe:hover{
 /* FORMULARIO */
 form{
     border-bottom: none;
-    background-color: blue;
+    background-color:#f8e12e;
     min-height: 50vh;
     width: 60vw;
     margin-bottom: 2rem;
-    color: yellow;
+    color:black;
     font-family:'Franklin Gothic Medium';
     padding: 1rem;
 }
@@ -206,20 +215,33 @@ fieldset{
     padding: 0.6rem;
 }
 .regiscon{
+    margin-top: 20px;
     min-height: 60vh;
     display: flex;
     justify-content: center;
 }
 input{
-    color: rgb(255, 221, 0);
     font-family:'Franklin Gothic Medium';
-    background-color: rgb(182, 88, 88);
 }
 .positions{
     padding: 1rem;
 }
-::placeholder{
-    color: yellow;
+.email{
+    color: #fff;
 }
-
-
+.gamesCtn{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.articlecon{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+.p-color{
+    color: black;
+}
