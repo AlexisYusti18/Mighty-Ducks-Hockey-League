@@ -6,6 +6,13 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500&family=Gentium+Book+Plus&family=Inter&family=Oswald:wght@500&family=Roboto:ital,wght@0,100;1,700&family=Shadows+Into+Light&display=swap');
 
+html::-webkit-scrollbar {
+    width: 12px;
+    background-color: #211915;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #f8e12e;
+}
 body{
     background-color: #211915;
 }
